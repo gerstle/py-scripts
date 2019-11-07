@@ -4,3 +4,4 @@
 * `virtualenv -p python3 .`
 * `source ./bin/activate`
 * `python --version` should show `3.x.y`
+* `pip install -r requirements.txt`
