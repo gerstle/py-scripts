@@ -21,9 +21,9 @@ def print_time_string(input):
     print(int(time_val.timestamp()))
 
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='unix timestamp utility')
 parser.add_argument("-t", "--timestamp", help="optional unix timestamp to parse", type=int)
-parser.add_argument("-s", "--string", help="optional date time as string to parse - " + str_format)
+parser.add_argument("-s", "--string", help="optional date time as string to parse - YYYY-mm-ddTHH:MM::SSz")
 args = parser.parse_args()
 
 if args.timestamp:
